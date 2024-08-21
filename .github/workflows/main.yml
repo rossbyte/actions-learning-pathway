@@ -11,5 +11,9 @@ jobs:
         with:
           node-version: '18.x'
       - run: echo "$(cat hello_world.txt)"
+      - uses: actions/upload-article@v4
+        with:
+          file: hello_world.txt
+        
       - run: npm install
       - run: npm run build 
