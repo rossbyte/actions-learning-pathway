@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: echo "$(cat hello_world.txt)"
-      - uses: actions/upload-article@v4
+      - uses: actions/upload-artifact@v4
         with:
           file: hello_world.txt
         
